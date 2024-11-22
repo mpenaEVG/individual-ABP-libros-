@@ -1,0 +1,323 @@
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////// 
+                                        ESTILO GENERAL
+/////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+*{
+  margin: 0;
+}
+
+html{
+  width: 1920px;
+  height: 1080px;
+}
+body{
+  position: relative;  /* Pongo el position relative para poder poner el footer absoluto a él*/
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+header{
+  position: relative;  
+  width: 100%;
+  height: 7%;
+  background-color: #203f9d;
+  font-size: 1.2em;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+}
+header a{
+  position: absolute;
+  color:white;
+  font-size: 0.75em;
+  right:5%;
+  top: 40%;
+  text-decoration: none;
+} 
+header a:hover{
+  cursor: pointer;
+}
+header a:visited{
+  color:inherit;
+}
+
+h2{   
+  width: 50%;
+  margin-left:26%;
+  padding-top:px;
+}
+
+/* MAIN */ 
+
+main{
+  text-align: center;
+  padding: 100px;
+  color: #203f9d;
+}
+h1{
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+h3{
+  margin-bottom: 5%;
+}
+
+#contenedor{
+  width: 50%;
+  margin: 0 25%;
+}
+
+.opcion{
+  height: 90px;
+  width: 20%;
+  float: left;
+  text-align: center;
+  padding-top: 60px;
+  margin:0 55px;
+}
+
+.opcion a {
+  display: block; 
+  text-decoration: none; 
+  color: white;
+  background-color: #203f9d; 
+  border: 1px solid black;
+  border-radius: 5px; 
+  padding: 30px; 
+  text-align: center;
+  font-weight: bold;
+  height: 100%; 
+  box-sizing: border-box; 
+}
+
+.opcion a:hover {
+  background-color: green; 
+  color: white; 
+  cursor: pointer; 
+}
+
+footer{
+  position: absolute;
+  top:95%;
+  text-align: center;
+  width: 100%;
+  font-size: 0.5em;
+  font-style: italic;
+}
+
+
+/* BOTÓN PARA VOLVER AL INDEX */
+
+#volver{
+  display: block; 
+  position: absolute;
+  top: 85%;
+  right: 45%;
+  text-decoration: none; 
+  color: white;
+  background-color: #203f9d; 
+  border: 1px solid black;
+  border-radius: 5px; 
+  padding: 10px; 
+  text-align: center;
+  height: 40px; 
+  width: 10%;
+  box-sizing: border-box; 
+}
+
+
+/* PÁGINA CONTACTO */ 
+
+.contacto{
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  padding-top: 70px;
+}
+
+.contacto p{
+  font-size: 2em;
+  color:black;
+  font-weight: bold;
+}
+
+/* PÁGINA FORMULARIO */ 
+  
+form {
+  background-color:#203f9d;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.2em;
+  color: white;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.checkbox-group {
+  height: 100px;
+}
+
+.checkbox-group label {
+  font-size: 1.2em;
+  display:block;
+  margin-top: 5%;
+  color: white;
+}
+
+button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  margin: 0 43%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////// 
+                                        ZONA MEDIA QUERIES
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+MEDIA QUERY PARA TABLETS*/ 
+
+@media (max-width: 900px){
+  html{
+    width: 100%;
+    height: 100%;
+  }
+  header{
+    font-size: 1.25em;
+  }
+
+  header p{
+    margin: 10px 40%;
+  }
+
+  h1{
+    font-size: 2em;
+  }
+  h2{
+    font-size: 1em;
+  }
+  h3{
+    font-size: 1em;
+  }
+  .opcion{
+    width: 80%;
+    margin: 0 10%;
+  }
+  #volver{
+    width: 30%;
+    right: 35%;
+  }
+}
+ /*  MEDIA QUERY PARA TELÉFONOS */ 
+
+@media (max-width: 500px){
+
+  html{
+    width: 100%;
+    height: 100%;
+  }
+  header{
+    font-size: 0.75em;
+  }
+  header p{
+    margin: 10px 38%;
+    width: 100px;
+  }
+  h1{
+    font-size: 1.5em;
+  }
+  h3{
+    font-size: 0.75em;
+  }
+  #contenedor{
+    width: 100%;
+    margin: 0 10%;
+  }
+  .opcion{
+    font-weight: bold;
+    width: 80%;
+    height: 20px;
+    font-size: 0.75em;
+    margin: 4% 0;
+  }
+  .opcion a{
+    padding-bottom: 40px;
+  }
+  .contacto p{
+    font-size: 1.75em;
+  }
+  form {
+    width: 100%; 
+    padding: 15px;
+  }
+
+  .form-group {
+    margin-bottom: 12px; 
+  }
+
+  label {
+    font-size: 1em; 
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    font-size: 0.8em; 
+  }
+
+  button {
+    width: 50%; 
+    padding: 8px 16px; 
+    font-size: 1em; 
+    margin: 6% 25%;
+  }
+
+  .checkbox-group {
+    height: auto;
+    text-align: center; 
+  }
+
+  .checkbox-group label {
+    font-size: 1em;
+    margin-top: 5%;
+    display: block; 
+  }
+}

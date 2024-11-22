@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+}
+
+html{
+  width: 1920px;
+  height: 1080px;
+}
+body{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+header{
+  width: 100%;
+  height: 7%;
+  background-color: #203f9d;
+  font-size: 1.2em;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+}
+header a{
+  position: absolute;
+  right: 5%;
+  top:4%;
+  font-size: 0.75em;
+  text-decoration: none;
+} 
+header a:visited{
+  color:inherit;
+}
+main{
+  text-align: center;
+  padding: 100px;
+  color: #203f9d;
+}
+h1{
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+#contenedor{
+  width: 50%;
+  margin: 0 25%;
+}
+
+table{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th{
+  background-color: #203f9d;
+  color: white;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+
+td{
+  width: 1%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+
+footer{
+  color: black;
+  position: absolute;
+  top: 95%;
+  text-align: center;
+  width: 100%;
+  font-size: 0.5em;
+  font-style: italic;
+}
+
+label {
+  font-size: 1.2em;
+  color: white;
+}
+
+#botones{
+  position: absolute;
+  top: 75%;  /* Ajusta esta posición para colocar los botones entre el main y el footer */
+  left: 50%;
+  width: auto;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+button {
+  background-color: #203f9d;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: green;
+}
+/* MEDIA QUERY PARA TABLETS*/ 
+
+@media (max-width: 900px){
+  html{
+    width: 100%;
+    height: 100%;
+  }
+  header{
+    font-size: 1.25em;
+  }
+  h1{
+    font-size: 2em;
+  }
+}
+
+
+/* MEDIA QUERY PARA TELÉFONOS */ 
+
+@media (max-width: 500px) {
+  html {
+    width: 100%;
+    height: 100%;
+  }
+  header {
+    font-size: 0.75em;
+    padding: 10px;
+    align-items: center;
+  }
+  header h2 {
+    font-size: 1.75em;
+    text-align: center;
+  }
+  header p {
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  #contenedor {
+    width: 90%;
+    margin: 0 auto;  
+  }
+
+  button {
+    width: 90%; /* Asegurarse de que los botones ocupen más espacio en pantallas pequeñas */
+    padding: 12px 20px; /* Mayor espacio en botones */
+    font-size: 1.2em; /* Mayor tamaño de fuente para mejor legibilidad */
+    margin: 6% 5%; /* Ajuste de márgenes para que no estén tan pegados */
+  }
+
+}  

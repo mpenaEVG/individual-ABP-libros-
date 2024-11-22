@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #33637d;
+    color: #fff;
+    padding: 15px;
+    position: relative;
+}
+
+header > h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+header  > button {
+    position: absolute;
+    right: 0%;
+    top: 40%;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+section {
+    width: 100%;
+    padding-top: 15px;
+}
+
+section>button {
+    background-color: #33637d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav>select,
+nav>input {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #33637d;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Limpiar flotantes */
+section::after,
+nav::after {
+    content: "";
+    display: table;
+    clear: both;
+}

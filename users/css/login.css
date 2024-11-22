@@ -1,0 +1,136 @@
+html{
+background-color: #162a6d;
+  width: 1920px;
+  height: 1080px;
+}
+
+body{
+  font-family: Rowboat, sans-serif;
+  width:100%;
+  height: 100%;
+}
+
+#login{
+  border: 1px solid #162a6d;;
+  width: 30%;
+  height: 50%;
+  margin-left: 35%;
+  margin-top: 10%;
+  border-radius: 30px;
+  background-color: #e6ecf8;
+}
+
+h2{
+  background-color:#203f9d;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+}
+
+.grupoInput{
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 50%;
+  padding: 10px;
+  font-size: 1em;
+  margin-top: 5%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color:#203f9d;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 10% 43%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green;
+}
+
+a{
+  display: block;
+  color:blue;
+  text-align: center;
+  margin-top:1%;
+  text-decoration: none;
+}
+a:visited{
+ color:blue;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////// 
+                                        ZONA MEDIA QUERIES
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+  MEDIA QUERY PARA TABLET*/
+
+@media (max-width: 900px) {
+  html{
+    height: 900px;
+    width: 900px;
+  }
+  #login {
+    width: 50%;
+    height: 55%;
+    margin-left: 18%;
+    margin-top: 20%;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 70%;
+  }
+
+  button {
+    margin: 10% 42%;
+  }
+}
+
+/* Media Query: max-width 500px */
+@media (max-width: 500px) {
+  html{
+    height: 900px;
+    width: 400px;
+  }
+  #login {
+    width: 80%;
+    height: 60%;
+    margin-left: 9%;
+    margin-top: 30%;
+    font-size: 0.75em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 60%;
+    margin-top: 15%;
+  }
+
+  button {
+    margin: 20% auto;
+    display: block;
+    width: 50%;
+  }
+  a{
+  }
+}
