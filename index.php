@@ -3,7 +3,7 @@ require __DIR__ . '/controlador/sonIguales.php';
 require __DIR__ . '/modelo/dbConnect.php';
 require __DIR__ . '/controlador/AuthControl.php';
 require __DIR__ . '/controlador/ModfPasswdControl.php';
-require __DIR__ . '/versiexisteuser.php';
+require __DIR__ . '/controlador/versiexisteuser.php';
 try{
 
   $dbConexion = (new DatabaseConnection())->getConnection();
