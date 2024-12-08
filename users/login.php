@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
     <link rel="stylesheet" href=shttps://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="users/css/login.css?v=1.0">
+    <link rel="stylesheet" href="/individual-ABP/users/css/login.css?v=1.0">
     </head>
 <body>
     <div id="login">
         <h2>Inicio de sesión</h2>
-        <form action="/individual/index.php" method="POST">
+        <form action="/individual-ABP/index.php" method="POST">
             <div class="grupoInput">
                 <i class="fas fa-user"></i>
                 <input type="text" name="username" placeholder="Introduce tu nombre de usuario" required>
@@ -30,7 +30,7 @@
             </div>
             <button type="submit">Entrar</button>
         </form>
-        <a href="/individual/users/olvidadoContrasenia.php">He olvidado mi contraseña</a>
+        <a href="./users/olvidadoContrasenia.php">He olvidado mi contraseña</a>
         <a href="#">Activar mi cuenta</a>
     </div>
 

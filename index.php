@@ -9,6 +9,7 @@ try{
   $dbConexion = (new DatabaseConnection())->getConnection();
   $authController = new authControl($dbConexion);
 
+
   if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
    if(isset($_GET['controlador'])){

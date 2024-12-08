@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperar Contraseña</title>
-    <link rel="stylesheet" href="/individual/users/css/login.css?v=1.0">
+    <link rel="stylesheet" href="/individual-ABP/users/css/login.css?v=1.0">
     </head>
 <body>
     <div id="login">
         <h2>Recuperar Contraseña</h2>
 
-         <form action="/individual/index.php?controlador=insertar" method="POST">
+         <form action="index.php?controlador=insertar" method="POST">
             <div class="grupoInput">
                 <i class="fas fa-user"></i>
                     <div class="grupoInput">
